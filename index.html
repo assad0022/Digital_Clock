@@ -6,81 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body{
-            margin: 0;
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-             justify-content: center;
-             height: 100vh;
-             background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background: url("https://images.unsplash.com/photo-1668953009809-140e120356cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-        }
-        h2{
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 24px;
-            text-align: center;
-            color: h2;
-        }
-        .clock{
-            display: flex;
-        }
-        .clock div{
-            margin: 5px;
-            position: relative;
-        }
-        .clock span{
-            width: 100%;
-            height: 80px;
-            background: slateblue;
-            opacity: 0.8;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 50px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        .clock .text{
-            height: 30px;
-            font-size: 10px;
-            text-transform: uppercase;
-            background: darkblue;
-            opacity: 0.8;
-        }
-        .clock #amPm{
-            bottom: 0;
-            position: absolute;
-            width: 60px;
-            height: 30px;
-            font-size: 20px;
-            background: green;
-        }
-    </style>
 </head>
 <body>
         <h2>Digital Clock</h2>
         <div class="clock">
             <div>
-                <span id="hours">00</span>
+                <span id="hour">00</span>
                 <span class="text">Hours</span>
             </div>
             <div>
-                <span id="minutes">00</span>
+                <span id="minute">00</span>
                 <span class="text">minutes</span>
             </div>
             <div>
-                <span id="seconds">00</span>
+                <span id="second">00</span>
                 <span class="text">seconds</span>
             </div>
             <div>
                 <span id="amPm">AM</span>
             </div>
     </div>
+    <script src="script.js"></script>
     </body>
 </html>
